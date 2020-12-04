@@ -139,98 +139,66 @@ class SecondActivity : AppCompatActivity(),View.OnClickListener {
 
         if (firstPlayer.contains(1) && firstPlayer.contains(2) && firstPlayer.contains(3)) {
             winnerPlayer = 1
-            xScore.text = "$player1name:" + (xscore + 1).toString()
-            xscore += 1
 
         }
         if (secondPlayer.contains(1) && secondPlayer.contains(2) && secondPlayer.contains(3)) {
             winnerPlayer = 2
-            oScore.text = "$player2name:" + (oscore + 1).toString()
-            oscore += 1
 
         }
         if (firstPlayer.contains(4) && firstPlayer.contains(5) && firstPlayer.contains(6)) {
             winnerPlayer = 1
-            xScore.text = "$player1name:" + (xscore + 1).toString()
-            xscore += 1
 
         }
         if (secondPlayer.contains(4) && secondPlayer.contains(5) && secondPlayer.contains(6)) {
             winnerPlayer = 2
-            oScore.text = "$player2name:" + (oscore + 1).toString()
-            oscore += 1
 
         }
         if (firstPlayer.contains(7) && firstPlayer.contains(8) && firstPlayer.contains(9)) {
             winnerPlayer = 1
-            xScore.text = "$player1name:" + (xscore + 1).toString()
-            xscore += 1
 
         }
         if (secondPlayer.contains(7) && secondPlayer.contains(8) && secondPlayer.contains(9)) {
             winnerPlayer = 2
-            oScore.text = "$player2name:" + (oscore + 1).toString()
-            oscore += 1
 
         }
         if (firstPlayer.contains(1) && firstPlayer.contains(4) && firstPlayer.contains(7)) {
             winnerPlayer = 1
-            xScore.text = "$player1name:" + (xscore + 1).toString()
-            xscore += 1
 
         }
         if (secondPlayer.contains(1) && secondPlayer.contains(4) && secondPlayer.contains(7)) {
             winnerPlayer = 2
-            oScore.text = "$player2name:" + (oscore + 1).toString()
-            oscore += 1
 
         }
         if (firstPlayer.contains(2) && firstPlayer.contains(5) && firstPlayer.contains(8)) {
             winnerPlayer = 1
-            xScore.text = "$player1name:" + (xscore + 1).toString()
-            xscore += 1
 
         }
         if (secondPlayer.contains(2) && secondPlayer.contains(5) && secondPlayer.contains(8)) {
             winnerPlayer = 2
-            oScore.text = "$player2name:" + (oscore + 1).toString()
-            oscore += 1
 
         }
         if (firstPlayer.contains(3) && firstPlayer.contains(6) && firstPlayer.contains(9)) {
             winnerPlayer = 1
-            xScore.text = "$player1name:" + (xscore + 1).toString()
-            xscore += 1
 
         }
         if (secondPlayer.contains(3) && secondPlayer.contains(6) && secondPlayer.contains(9)) {
             winnerPlayer = 2
-            oScore.text = "$player2name:" + (oscore + 1).toString()
-            oscore += 1
 
         }
         if (firstPlayer.contains(1) && firstPlayer.contains(5) && firstPlayer.contains(9)) {
             winnerPlayer = 1
-            xScore.text = "$player1name:" + (xscore + 1).toString()
-            xscore += 1
 
         }
         if (secondPlayer.contains(1) && secondPlayer.contains(5) && secondPlayer.contains(9)) {
             winnerPlayer = 2
-            oScore.text = "$player2name:" + (oscore + 1).toString()
-            oscore += 1
 
         }
         if (firstPlayer.contains(3) && firstPlayer.contains(5) && firstPlayer.contains(7)) {
             winnerPlayer = 1
-            xScore.text = "$player1name:" + (xscore + 1).toString()
-            xscore += 1
 
         }
         if (secondPlayer.contains(3) && secondPlayer.contains(5) && secondPlayer.contains(7)) {
             winnerPlayer = 2
-            oScore.text = "$player2name:" + (oscore + 1).toString()
-            oscore += 1
 
         }
         if (clickCount == 9 && winnerPlayer == 0) {
@@ -239,8 +207,12 @@ class SecondActivity : AppCompatActivity(),View.OnClickListener {
 
         if (winnerPlayer != 0) {
             if (winnerPlayer == 1) {
+                xScore.text = "$player1name:" + (xscore + 1).toString()
+                xscore += 1
                 Toast.makeText(this, "X Wins!", Toast.LENGTH_LONG).show()
             } else {
+                oScore.text = "$player2name:" + (oscore + 1).toString()
+                oscore += 1
                 Toast.makeText(this, "O wins!", Toast.LENGTH_LONG).show()
             }
             disableButtons()
